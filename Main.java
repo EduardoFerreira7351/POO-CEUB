@@ -5,13 +5,12 @@ public class Main {
             //Bloco true
             c = a + b;
             System.out.print("Sei somar! O resultado é: ");
-            System.err.println(c);
         }
         else {
             //bloco False
             c = a - b;
             System.out.print("sei subtrair! O resultado é: ");
-            System.out.println(c);
         }
+        System.out.println(c);
     }
 }
