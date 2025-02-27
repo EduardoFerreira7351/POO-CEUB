@@ -1,16 +1,33 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int a=10, b=5, c=0;
-        if (a >= 5){
-            //Bloco true
-            c = a + b;
-            System.out.print("Sei somar! O resultado é: ");
+        // Declaração de variável
+        int opcao;
+        // Cria objeto para entrada da opção do cardápio
+        Scanner leitorOpcao = new Scanner(System.in);
+        //Apresenta o cardápio
+        System.out.println("1  Pastel de carne \n");
+        System.out.println("2  Coxinha de frango \n");
+        System.out.println("3  Kibe com queijo \n");
+        // Entrada da opção do cardápio
+        System.out.print("Escolha uma opção: ");
+        opcao = leitorOpcao.nextInt();
+        //Seleção da opção
+        switch(opcao)
+        {
+            case 1:
+                System.out.println(" Pastel de carne escolhido.");
+                break;
+            case 2:
+                System.out.println(" Coxinha de frango escolhida.");
+                break;
+            case 3:
+                System.out.println(" Kibe com queijo escolhido.");
+                break;
+            default:
+                System.out.println("Opção invalida!");
+                break;
         }
-        else {
-            //bloco False
-            c = a - b;
-            System.out.print("sei subtrair! O resultado é: ");
-        }
-        System.out.println(c);
+        leitorOpcao.close();
     }
 }
